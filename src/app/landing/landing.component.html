@@ -1,0 +1,542 @@
+<body>
+    <div class="top-half">
+        <div class="top-bar">
+            <div class="left-content">
+                <span class="location-icon"><i class='bx bxs-location-plus'></i> 3rd floor, Utumishi House</span>
+                <span class="email-icon"><i class='bx bxs-envelope'></i> info&#64;kentapay.io</span>
+            </div>
+            <div class="right-content">
+                <select><option>Kenya</option> &#x1F1F0;&#x1F1EA;</select>
+                <a href="https://developer.kentapay.com/auth/login"><div class="login-link"><i class='bx bxs-lock-open-alt' ></i> Login</div></a>
+                <a href="https://developer.kentapay.com/auth/register"><div class="register-link"><i class='bx bxs-user-plus'></i> Register</div></a>
+            </div>
+        </div>
+        <!-- Header Section -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="assets/kentapay.png" alt="kentapay" aria-hidden="true">
+                </div>
+                <span class="nav-links">
+                    <div (mouseenter)="showServices = true" (mouseleave)="showServices = false">KentaPay Services</div>
+                    <app-services *ngIf="showServices"></app-services>
+                    <div>Payment</div>
+                    <div>Security</div>
+                    <a href="https://developer.kentapay.com/"><div>Developers</div></a>
+                    <div>Company</div>
+                </span>
+                <button class="talk-to-us">Talk to us <i class='bx bx-right-arrow-alt'style="color: #00164C" ></i></button>
+            </nav>
+        </header>
+    
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <p class="we">We Are payment gateway solution</p>
+                <h1>Embed payment on your platform</h1>
+                <p class="about">“ KentaPay is the trusted choice for hundreds of companies in Africa, ranging from innovative startups to industry-leading companies. Our cutting-edge software and APIs empower businesses to seamlessly handle a spectrum of financial transactions, from accepting payments to facilitating secure payouts. With KentaPay, companies efficiently manage and grow their operations in the dynamic landscape of online business “</p>
+                <button class="talk-to-us">Talk to us</button>
+            </div>
+        </section>
+    </div>
+    
+
+    <!-- Services Section -->
+    <section class="services">
+        <span class="service voice">
+            <i class='bx bxs-bar-chart-alt-2'></i>
+            <div>
+                <h3>Voice</h3>
+                 <p>Get unlimited talk time across all networks within East Africa.</p>
+            </div>
+        </span>
+        <span class="service developer">
+            <i class='bx bx-cloud'></i>
+            <div>
+                <h3>Developer Community</h3>
+                <p>Access all our developer resources and integrations.</p>
+            </div>
+        </span>
+        <span class="service electronic">
+            <i class='bx bx-cloud'></i>
+            <div>
+                <h3>Electronic Payment</h3>
+                <p>Quick response payments for all your online payment needs.</p>
+            </div>
+        </span>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <span class="gateway"></span>
+        <span class="who-we-are">
+            <div class="style-line"><span class="dot-line"></span><span class="line"></span></div>
+            <p>WHO WE ARE</p>
+            <h1>Your Partner for Exceptional Payment Solutions</h1>
+            <p>
+                We offer a diverse range of communication and payments API products, providing you with all the tools necessary to construct highly effective mobile engagement solutions. Our platform empowers you to craft superior customer engagement experiences effortlessly, eliminating the intricacies often associated with direct interactions with mobile operators. Moreover, our Integrated Payment Processing Solutions are designed to shield your business from the challenges that can arise in the world of payment processing
+            </p>
+            <h2>How We Work</h2>
+            <div>
+                <p>34/7 Client Support</p>
+                <p>But I must explain to you how all this mistaken idea of ncing pleasure and praising pain was.</p>
+            </div>
+        </span>
+    </section>
+
+    <!-- Our Customers Section -->
+    <section class="customers">
+        <p>OUR SERVICES</p>
+        <h2 style="margin-bottom: 20px;">More than 500+ Customers join with us</h2>
+        <div class="customer-services">
+            <div class="customer messaging">
+                <div>
+                    <i class='bx bxs-data'></i>
+                </div>
+                <h3>Messaging Services</h3>
+                <p style="font-size: 14px;">We redefine the landscape of communication with our comprehensive Messaging Services both locally and internationally. We provide seamless integration, high delivery rates, and comprehensive analytics to track your campaigns’ performance. We pride in our 24/7 customer support and competitive pricing.</p>
+                <a class="read-more">READ MORE</a>
+            </div>
+            <div class="customer sender">
+                <div>
+                    
+                </div>
+                <h3>Sender ID Services</h3>
+                <p style="font-size: 14px;">Create a lasting impression with our advanced SMS services.</p>
+                <a class="read-more">READ MORE</a>
+            </div>
+            <div class="customer emails">
+                <div>
+                    <i class='bx bxs-cloud-upload'></i>  
+                </div>
+                <h3>Emails</h3>
+                <p style="font-size: 14px;">Effective communication is key to every successful business.</p>
+                <a class="read-more">READ MORE</a>
+            </div>
+            <div class="customer emails">
+                <div>
+                    <i class='bx bxs-bar-chart-alt-2'></i>
+                </div>
+                <h3>USSD</h3>
+                <p style="font-size: 14px;">Effective communication is key to every successful business.</p>
+                <a class="read-more">READ MORE</a>
+            </div>
+            <div class="customer emails">
+                <div>
+                    <i class='bx bxs-tv'></i>
+                </div>
+                <h3>Pay TV</h3>
+                <p style="font-size: 14px;">Effective communication is key to every successful business.</p>
+                <a class="read-more">READ MORE</a>
+            </div>
+            <div class="customer emails">
+                <h3>Internet subscriptions</h3>
+                <p style="font-size: 14px;">Effective communication is key to every successful business.</p>
+                <a class="read-more">READ MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working Process Section -->
+    <section class="working-process">
+         <div class="left-side">
+            <div class="progress-bars">
+                <div style="color: #0C3EB9;">Working process</div>
+                <h2>We are trusted across Africa, with over 13 years of experience</h2>
+                <p>In the contemporary business landscape, ensuring an exceptional customer experience is paramount for setting your enterprise apart and fostering unwavering loyalty among your clientele.</p>
+       
+                <div>
+                    <p><span>(73%)</span> - Development</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 73%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>(82%) - Design</p>#00164C
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 82%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>(60%) - Payment Solution</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>(65%) - Support</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating-circle">
+                <div class="circle"></div>
+                <div class="data-sq">
+                    <h1 style="color: #0C3EB9; display: flex; flex-direction: column; align-items: center; justify-content: center;">92%</h1>
+                    <p>working total <br> rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies">
+        <p style="color:#0C3EB9;">Our project</p>
+        <h2>Our Latest Case Studies</h2>
+        <div class="cases">
+            <div class="case">Voice</div>
+            <div class="case">Development</div>
+            <div class="case">Electronic Payment</div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team">
+        <div class="team-text">
+            <h2>More than 7+ years we <br> provide payment solutions</h2>
+            <span style="display: flex; flex-direction: column;">
+                <p>We are privileged to work with hundreds of future-thinking businesses, includin brands.</p>
+                <p style="color: #0C3EB9;">READ MORE</p>
+            </span>
+        </div>
+        <div class="team-members">
+            <div class="team-member"><img src="assets/member3.jpg" alt="member3"></div>
+            <div class="team-member"><img src="assets/member2.jpg" alt="member2"></div>
+            <div class="team-member"><img src="assets/member1.jpg" alt="member1"></div>
+        </div>
+        <div class="banners" style="margin-top: 30px; height: 100px; box-shadow: 0px 0px 117px #0C3EB914; width: 670px;">
+            <span>
+                <div>
+                    <img src="../../assets/boss.jpg" alt="">
+                </div>
+                <div>
+                    <h1>25k+</h1>
+                    <p>Happy clients</p>
+                </div>
+            </span>
+            <span>
+                <div>
+                    <img src="../../assets/honest.jpg" alt="">
+                </div>
+                <div>
+                    <h1>769+</h1>
+                    <p>Projects completed</p>
+                </div>
+            </span>
+            <span>
+                <div>
+                    <img src="../../assets/942802.jpg" alt="">
+                </div>
+                <div>
+                    <h1>85+</h1>
+                    <p>Business partners</p>
+                </div>
+            </span>
+            <span>
+                <div>
+                    <img src="../../assets/medal.jpg" alt="">
+                </div>
+                <div>
+                    <h1>75+</h1>
+                    <p>Awards winning</p>  
+                </div>
+            </span>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <!-- Working Video Section -->
+
+<section class="working-video">
+    <div class="video-content">
+        <h2>We embed payment on your Platform.</h2>
+        <video src=""></video>
+        <button class="talk-to-us">Contact Now</button>
+    </div>
+</section>
+
+<!-- Case Studies Section -->
+<section class="case-studies">
+    <p>CASE STUDIES</p>
+    <h2>Proud Projects Make</h2>
+    <div class="cases">
+        <div class="case">
+            <h3>Marketing Strategy</h3>
+            <p>Team Meeting</p>
+            <a href="#">View Case Study</a>
+        </div>
+        <div class="case">
+            <h3>Request a Meeting</h3>
+            <p>Business Plan</p>
+            <a href="#">View Case Study</a>
+        </div>
+        <div class="case">
+            <h3>Choose a Service</h3>
+            <p>Payment Solution</p>
+            <a href="#">View Case Study</a>
+        </div>
+    </div>
+</section>
+
+<!-- Industry Expert Section -->
+<section class="industry-expert">
+    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        <span>
+            <h1>WHAT WE SERVE</h1>
+             <h2>Best Practices from <br> Industry Expert</h2>
+        </span>
+        <span>
+            <p>We are privileged to work with hundreds of future-thinking, industry-leading brands. Our deep industry expertise enables global brands to hit the ground running.</p>
+        </span>
+    </div>
+    
+    <div class="expert-services">
+        <div class="expert-service">
+            <h3>Payment Gateway</h3>
+        </div>
+        <div class="expert-service">
+            <h3>Payment Gateway</h3>
+        </div>
+        <div class="expert-service">
+            <h3>Payment Gateway</h3>
+        </div>
+        <div class="expert-service">
+            <h3>Payment Gateway</h3>
+        </div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        <span></span>
+        <span>
+            <h1>02 Payment gateway</h1>
+            <h2>Payment Experiance</h2>
+            <p style="color: #626262;">
+                It is a long established fact that a reader will be distracted by the rea dable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more or less normal page distribution of letters, as opposed to using Content here,content here normal distribution looking at its.
+            </p>
+            <a href="">
+                GET DETAILS
+            </a>
+        </span>
+    </div>
+</section>
+
+<!-- Blog Update Section -->
+<section class="blog-update">
+    <p>OUR ARTICLE</p>
+    <h2>Latest Blog Update</h2>
+    <div class="blogs">
+        <div class="blog">
+            <h3>Payment Fraud</h3>
+            <p>Protecting your company from fraud payment</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog">
+            <h3>Payment Fraud</h3>
+            <p>Protecting your company from fraud payment</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog">
+            <h3>Carousel of Colours</h3>
+            <p>Exploring the impact of colors in branding</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <div style="display: flex; flex-direction: row;">
+        <div><span class="dot"></span></div>
+        <p style="color: #0C3EB9;">TESTIMONIAL</p>
+    </div>
+    <h2>What Our Clients Say ?</h2>
+    <div class="testimonies">
+        <div class="testimonial">
+            <p>We develop reliable and scalable software solutions for any OS, browser, and device. We bring together deep industry expertise and the latest advancements.</p>
+            <div style="display: flex; gap: 6px; align-items: center;">
+                <span class="profile-circle"></span>
+                <span>
+                    <p>Rameli Andrea</p>
+                    <p>CEO & Founder</p>
+                </span>
+            </div>
+        </div>
+        <div class="testimonial">
+            <p>Our solutions are focused on delivering the best possible outcomes for our clients. We pride ourselves on our professionalism and attention to detail.</p>
+            <div style="display: flex; gap: 6px; align-items: center;">
+                <span class="profile-circle"></span>
+                <span>
+                    <p>Abbie Ferguson</p>
+                    <p>CEO & Founder</p>
+                </span>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<!-- Footer Section -->
+ <footer class="footer-1">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+ </footer>
+<footer class="footer-2">
+    <div class="foot-cont">
+        <div class="footer-logo">KentaPay</div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Payments</h3>
+                <ul>
+                    <li>Card Payments</li>
+                    <li>Mobile Payments</li>
+                    <li>Fraud Guard</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Products</h3>
+                <ul>
+                    <li>SMS</li>
+                    <li>USSD</li>
+                    <li>Airtime</li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Quick Contact</h3>
+                <p>If you have any questions or need help, feel<br> free to contact our team.</p>
+                <p>(+990) 885-69569</p>
+                <p>3rd Floor, Utumishi Co-op House,<br> Mamlaka Road, Nairobi, Kenya</p>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-3">
+        <div class="footer-content">
+            <p>&copy; 2024 KentaPay. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>

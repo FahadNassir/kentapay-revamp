@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    margin: -50px auto 50px auto;
+}
+
+.container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.section a {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0056b3;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section a::after {
+    content: "→";
+    margin-left: 5px;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.section:first-child {
+    margin-left: 0;
+}
+
+.section:last-child {
+    margin-right: 0;
+}
+
+.container h1,
+.container p {
+    margin-right: 40px;
+}
+
+.container {
+    align-items: flex-start;
+}
+
+.payment {
+    width: 279px;
+    height: 49px;
+    font: 29px;
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 45px;
+
+}
+
+p.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    line-height: 1;
+    max-width: 300px;
+}
