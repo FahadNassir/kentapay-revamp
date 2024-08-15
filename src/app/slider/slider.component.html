@@ -1,30 +1,8 @@
-<body>
-    <div class="swiper" 
-     loop="true" 
-     navigation="true"
-     slides-per-view = "4"
-     >
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="./assets/branch.png" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="./assets/faulu.png" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="./assets/gulf.png" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="./assets/kps.png" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="./assets/NuruNet.png" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="./assets/un.png" alt="">
-            </div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
-</body>
+<owl-carousel-o [options]="customOptions" class="carousel">
+    <ng-template carouselSlide><img src="assets/branch.png" alt=""></ng-template>  
+    <ng-template carouselSlide><img src="assets/gulf.png" alt=""></ng-template>  
+    <ng-template carouselSlide><img src="assets/faulu.png" alt=""></ng-template>
+    <ng-template carouselSlide><img src="assets/kps.png" alt=""></ng-template>
+    <ng-template carouselSlide><img src="assets/un.png" alt=""></ng-template>
+    <ng-template carouselSlide><img src="assets/NuruNet.png" alt=""></ng-template>
+  </owl-carousel-o>

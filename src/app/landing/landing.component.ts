@@ -4,7 +4,7 @@ import { ServicesComponent } from '../services/services.component';
 import { CommonModule } from '@angular/common';
 import { PaymentServicesComponent } from '../payment-services/payment-services.component';
 import { TalkToUsComponent } from '../talk-to-us/talk-to-us.component';
-// import { SliderComponent } from '../slider/slider.component';
+import { SliderComponent } from '../slider/slider.component';
 
 
 
@@ -17,7 +17,7 @@ import { TalkToUsComponent } from '../talk-to-us/talk-to-us.component';
     CommonModule, 
     PaymentServicesComponent, 
     TalkToUsComponent,
-    // SliderComponent
+    SliderComponent,
    ],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css',

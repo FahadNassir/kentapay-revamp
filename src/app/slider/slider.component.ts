@@ -1,36 +1,38 @@
-import { Component, AfterViewInit } from '@angular/core';
-// import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
-import { Swiper } from 'swiper';
-
-// Import Swiper styles
-import 'swiper/swiper-bundle.min.css';
-
-// Register Swiper modules
-// Swiper.use([Autoplay, Navigation, Pagination]);
+import { Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-slider',
   standalone: true,
+  imports: [CarouselModule, CommonModule],
   templateUrl: './slider.component.html',
-  styleUrls: ['./slider.component.css'],
+  styleUrls: ['./slider.component.css']
 })
-export class SliderComponent implements AfterViewInit {
-  ngAfterViewInit() {
-    new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-        delay: 2000,
+export class SliderComponent {
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
       },
-      slidesPerView: 4,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      400: {
+        items: 2
       },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+      740: {
+        items: 3
       },
-    });
-  }
+      940: {
+        items: 4
+      }
+    },
+    nav: true
+  };
 }
