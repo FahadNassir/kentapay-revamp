@@ -23,7 +23,10 @@
     "@angular/ssr": "^18.1.4",
     "boxicons": "^2.1.4",
     "express": "^4.18.2",
+    "jquery": "^3.7.1",
     "rxjs": "~7.8.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.9",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },

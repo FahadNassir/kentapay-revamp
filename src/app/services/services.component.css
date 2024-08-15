@@ -3,6 +3,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    z-index: 10;
+    width: 90%;
+    height: fit-content;
 }
 
 .container-div {
@@ -48,12 +54,12 @@ body {
 
 .service-box {
     background-color: #ffffff;
-    padding: 15px;
+    padding: 8px;
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: left;
     cursor: pointer;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .service-box h2 {

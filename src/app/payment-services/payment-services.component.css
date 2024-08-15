@@ -3,14 +3,21 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
+    position: absolute;
+    top: 140px;
+    width: 90%;
+    left: 25px;
+    display: flex;
+    align-items: baseline;
+    z-index: 5;
 }
 
 .container {
     display: flex;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    margin: -50px auto 50px auto;
+    /* max-width: 1200px; */
+    /* margin: 40px auto; */
+    /* padding: 20px; */
+    /* margin: -50px auto 50px auto; */
 }
 
 .container h1 {
@@ -21,7 +28,7 @@ body {
 }
 
 .container p {
-    font-size: 16px;
+    font-size: 14px;
     color: #666;
     margin-bottom: 20px;
     max-width: 300px;
@@ -29,7 +36,7 @@ body {
 
 .section {
     flex: 1;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .section h2 {
@@ -48,8 +55,11 @@ body {
     margin-bottom: 10px;
 }
 
-.section p {
+p{
     font-size: 14px;
+}
+
+.section p {
     color: #333;
     margin-bottom: 20px;
 }
@@ -71,7 +81,7 @@ body {
 
 .container h1,
 .container p {
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .container {

@@ -2,12 +2,49 @@
     height: 40px;
     display: flex;
     justify-content: space-between;
-    padding-left:156px;
+    padding-left:126px;
     padding-right: 150px;
     color: white;
     align-items: center;
     font-size: 16px;
-    border-bottom: 0.1px solid rgba(253, 249, 249, 0.2);
+    border-bottom: 0.1px solid rgba(125, 123, 123, 0.1);
+}
+
+.top-bar  a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.logo{
+    width: 260px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-links  a{
+    text-decoration: none;
+    color: white;
+}
+
+.location-icon, 
+.email-icon,
+.login-link,
+.register-link{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 16px;
+}
+
+
+p,h1,h2{
+ padding: 0px;
+ margin:0px
 }
 
 .left-content{
@@ -20,14 +57,18 @@
     gap: 50px;
 }
 
+.hero-text > p, .hero-text > h1 {
+    margin-bottom: 15px;
+}
+
 .navbar{
-    padding-left: 156px;
+    padding-left: 126px;
     padding-right: 150px;
     padding-top:17px;
     height: 89px;
     display: flex;
     color: white;
-    border-bottom: 0.1px solid rgb(253, 249, 249, 0.2);
+    border-bottom: 0.1px solid rgba(125, 123, 123, 0.1);
     align-items: center;
 }
 
@@ -43,21 +84,42 @@
     color: white;
 }
 
+.nav-links > div:hover{
+    border-bottom: 1px solid white;
+}
 
-.hero{
-    padding-left: 256px;
+.hero {
+    padding-left: 236px;
     padding-top: 100px;
     color: white;
     border: none;
+    background-image: url("../../assets/mainbg2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 45, 110, 0.8); /* Black overlay with 50% opacity */
+    z-index: -10;
+}
+
+
+
 .hero-text{
-    height: 366px;
-    width: 799px;
+    /* height: 366px; */
+    width: 530px;
 }
 
 .top-half{
-    height: 1048px;
+    height: 848px;
     background-color: #00164C;
 }
 
@@ -66,8 +128,8 @@
     font-weight: bold;
 }
 
-.hero-text > .about{
-    font-size: 20px;
+.hero-text > .aboutp{
+    font-size: 16px;
     text-align: left;
     letter-spacing: 0;
 }
@@ -103,7 +165,7 @@ select{
     flex-direction: row;
     gap: 30px;
     position: relative;
-    top: -75px;
+    top: -95px;
     justify-content: center;
 }
 
@@ -117,22 +179,29 @@ select{
     height: 150px;
     padding: 38px 30px;
     display: flex;
-    align-items: baseline;
+    gap: 10px;
+    box-shadow: 0px 0px 117px #0c3eb914;
+}
+
+.service p{
+    line-height: 30px;
 }
 
 .voice, .electronic{
     background-color: white;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .gateway{
-    width: 648px;
-    height: 653px;
+    width: 50%;
+    /* height: 453px; */
     border: 1px solid black;
 }
 
 .about{
     display: flex;
+    padding: 30px 190px;
+    gap: 40px;
 }
 
 .who-we-are{
@@ -142,12 +211,18 @@ select{
 }
 
 .customers{
-    background: linear-gradient(to bottom, #F4F9FC 56.3%, white 50%);
+    background: linear-gradient(to bottom, #F4F9FC 54%, white 50%);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     padding: 60px 0px;
+}
+
+.read-more{
+    padding: 10px 20px;
+    border:0.3px solid rgba(125, 123, 123, 0.2);
+    border-radius: 4px;
 }
 
 .customer-services{
@@ -159,9 +234,14 @@ select{
     border: none;
 }
 
+.customer-services p{
+    font-size: 16px;
+    margin-bottom: 36px;
+}
+
 .customer{
     padding: 38px;
-    border: 0.1px solid rgb(181, 178, 178);
+    border: 0.1px solid rgb(181, 178, 178, 0.3);
 }
 
 .messaging, .emails {
@@ -169,20 +249,20 @@ select{
 }
 
 .style-line{
-    width: 20px;
+    width: 38px;
     display: flex;
-    gap: 2px;
+    gap: 4px;
     height: 5px;
 }
 
 .dot-line{
-    width: 4px;
+    width: 34%;
     background-color: #003FD9;
     border-radius: 5px;
 }
 
 .line{
-    width: 16px;
+    width: 66%;
     background-color: #003FD9;
     border-radius: 5px;
 }
@@ -195,27 +275,40 @@ select{
 .left-side{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 170px;
+    padding-left:170px;
 }
 
+.working-process{
+    padding: 30px 0px;
+}
 
 .progress-bars{
     display: flex;
     flex-direction: column;
 }
 
+.progress-bar{
+    margin-bottom: 20px;
+}
+
 .progress{
-    height: 10px;
+    height: 8px;
     background-color: #0C3EB9;
     border-radius: 6px;
 }
 
 .data-sq{
-    width: 150px;
-    height: 90px;
+    width: 180px;
+    height: 120px;
     background-color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    right: 120px;
+    right: 105px;
+    bottom: 50px;
     z-index: 10;
     box-shadow: 0px 0px 24px #0C3EB92E;
 }
@@ -248,43 +341,83 @@ select{
 }
 
 .case{
-    width: 300px;
-    height: 200px;
-    border: 1px solid #0C3EB9;
+    width: 370px;
+    height: 250px;
     box-shadow: 0px 0px 117px #0C3EB914;
+}
+
+.img-details{
+    width: 200px;
+    height: 96px;
+    background-color: white;
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    align-items: start;
+}
+
+.img-details > h1 {
+    font-size: 16px;
+    color: #0C3EB9;
+    margin-bottom: 10px;
 }
 
 .team{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding: 170px;
+    padding: 50px 190px;
 }
 
 .team-members{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+    margin-bottom: 70px;
 }
 
 .team-text{
     display: flex;
-    align-items:first baseline;
+    align-items:last baseline;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
 .team-member{
-    width: 200px;
-    height: 260px;
-    border: 1px solid #0C3EB9;
+    width: 300px;
+    height: 330px;
 }
+
+.team-member > img{
+    border-radius: 10px;
+}
+
 
 .team-text > h2, .team-text > span {
     width: 50%;
 }
 
+.jpeg{
+    width: 60px;
+    height: 60px;
+}
+
+.jpeg-container{
+    display: flex;
+    gap: 20px;
+}
+
 .banners{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap:40px;
 }
 
 .working-video{
@@ -302,6 +435,10 @@ select{
     align-items: center;
     gap: 40px;
     padding: 100px 0px;
+}
+
+.img-explanation{
+    background-color: white;
 }
 
 video{
@@ -328,17 +465,20 @@ video{
 .expert-service{
     width: 200px;
     height:100px;
-    border: 1px solid #0C3EB9;
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
+    padding: 10px 10px;
+    border: 0.4px sold rgb(72, 71, 71);
+    margin-bottom: 50px;
 }
 
 .blog-update{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0px;
+    padding: 60px 0px;
 }
 
 .blogs{
@@ -347,10 +487,9 @@ video{
 }
 
 .blog{
-    width: 200px;
-    height: 250px;
-    border: 1px solid #0C3EB9;
-    box-shadow: 0px 0px 117px #0C3EB914;
+    width: 300px;
+    height: 230px;
+     box-shadow: 0px 0px 117px #0C3EB914;
 }
 
 .testimonials{
@@ -380,8 +519,7 @@ video{
 }
 
 .footer-1{
-    background-color: #0C3EB9;
-    padding: 100px 256px;
+    background-color: white;
 }
 
 .footer-2{
@@ -408,7 +546,14 @@ li{
     color: white;
 }
 
-footer-3{
+.footer-logo{
+    width: 160px;
+    height: 60px;
+}
+
+.footer-3{
     padding: 10px 200px;
     background-color: #000A24;
 }
+
+  

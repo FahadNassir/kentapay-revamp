@@ -1,8 +1,7 @@
 import { Routes } from "@angular/router";
 import { LandingComponent } from "./landing/landing.component";
-import { PaymentServicesComponent } from "./payment-services/payment-services.component";
-import { ServicesComponent } from "./services/services.component";
 import { KycServicesComponent } from "./kyc-services/kyc-services.component";
+import { TalkToUsComponent } from "./talk-to-us/talk-to-us.component";
 
 const routeConfig: Routes = [
     {
@@ -11,19 +10,14 @@ const routeConfig: Routes = [
         title:'Landing Page'
     },
     {
-        path:'paymentServices',
-        component: PaymentServicesComponent,
-        title:'Payment services'
-    },
-    {
-        path:'services',
-        component: ServicesComponent,
-        title: 'services offered'
-    },
-    {
         path:'kyc-services',
         component: KycServicesComponent,
         title:"kyc services"
+    },
+    {
+        path:'talk-to-us',
+        component: TalkToUsComponent,
+        title:"talk to us"
     }
 ];
 

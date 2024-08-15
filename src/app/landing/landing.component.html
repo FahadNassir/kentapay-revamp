@@ -18,14 +18,29 @@
                     <img src="assets/kentapay.png" alt="kentapay" aria-hidden="true">
                 </div>
                 <span class="nav-links">
-                    <div (mouseenter)="showServices = true" (mouseleave)="showServices = false">KentaPay Services</div>
-                    <app-services *ngIf="showServices"></app-services>
-                    <div>Payment</div>
+                    <div 
+                (mouseenter)="showServices = true" 
+                (mouseleave)="showServices = false">KentaPay Services
+            </div>
+            <app-services 
+                *ngIf="showServices" 
+                (mouseenter)="showServices = true" 
+                (mouseleave)="showServices = false">
+            </app-services>
+                    <div
+                    (mouseenter)="showPaymentServices = true"
+                    (mouseleave)="showPaymentServices = false"
+                    >Payment</div>
+                    <app-payment-services 
+                    *ngIf="showPaymentServices"
+                    (mouseenter)="showPaymentServices = true" 
+                    (mouseleave)="showPaymentServices = false"  
+                    ></app-payment-services>
                     <div>Security</div>
                     <a href="https://developer.kentapay.com/"><div>Developers</div></a>
                     <div>Company</div>
                 </span>
-                <button class="talk-to-us">Talk to us <i class='bx bx-right-arrow-alt'style="color: #00164C" ></i></button>
+                <button class="talk-to-us" routerLink="talk-to-us">Talk to us <i class='bx bx-right-arrow-alt'style="color: #00164C" ></i></button>
             </nav>
         </header>
     
@@ -34,7 +49,7 @@
             <div class="hero-text">
                 <p class="we">We Are payment gateway solution</p>
                 <h1>Embed payment on your platform</h1>
-                <p class="about">“ KentaPay is the trusted choice for hundreds of companies in Africa, ranging from innovative startups to industry-leading companies. Our cutting-edge software and APIs empower businesses to seamlessly handle a spectrum of financial transactions, from accepting payments to facilitating secure payouts. With KentaPay, companies efficiently manage and grow their operations in the dynamic landscape of online business “</p>
+                <p class="aboutp">“ KentaPay is the trusted choice for hundreds of companies in Africa, ranging from innovative startups to industry-leading companies. Our cutting-edge software and APIs empower businesses to seamlessly handle a spectrum of financial transactions, from accepting payments to facilitating secure payouts. With KentaPay, companies efficiently manage and grow their operations in the dynamic landscape of online business “</p>
                 <button class="talk-to-us">Talk to us</button>
             </div>
         </section>
@@ -44,21 +59,21 @@
     <!-- Services Section -->
     <section class="services">
         <span class="service voice">
-            <i class='bx bxs-bar-chart-alt-2'></i>
+            <i class='bx bxs-bar-chart-alt-2' style="font-size: 60px; color: #0C3EB9;"></i>
             <div>
                 <h3>Voice</h3>
                  <p>Get unlimited talk time across all networks within East Africa.</p>
             </div>
         </span>
         <span class="service developer">
-            <i class='bx bx-cloud'></i>
+            <i class='bx bx-cloud' style="font-size: 60px;"></i>
             <div>
                 <h3>Developer Community</h3>
                 <p>Access all our developer resources and integrations.</p>
             </div>
         </span>
         <span class="service electronic">
-            <i class='bx bx-cloud'></i>
+            <i class='bx bx-cloud' style="font-size: 60px; color: #0C3EB9;"></i>
             <div>
                 <h3>Electronic Payment</h3>
                 <p>Quick response payments for all your online payment needs.</p>
@@ -70,69 +85,86 @@
     <section class="about">
         <span class="gateway"></span>
         <span class="who-we-are">
-            <div class="style-line"><span class="dot-line"></span><span class="line"></span></div>
-            <p>WHO WE ARE</p>
+            <div style="display: flex; align-items: center; gap: 8px; color: #0C3EB9; font-weight: 500;">
+                <div class="style-line">
+                    <span class="dot-line"></span>
+                    <span class="line"></span>
+                </div>
+                <p>WHO WE ARE</p>
+            </div>
+            
             <h1>Your Partner for Exceptional Payment Solutions</h1>
-            <p>
-                We offer a diverse range of communication and payments API products, providing you with all the tools necessary to construct highly effective mobile engagement solutions. Our platform empowers you to craft superior customer engagement experiences effortlessly, eliminating the intricacies often associated with direct interactions with mobile operators. Moreover, our Integrated Payment Processing Solutions are designed to shield your business from the challenges that can arise in the world of payment processing
+            <p style="color: #626262; margin-bottom: 30px;">
+                We offer a diverse range of communication and payments API products, providing you with all the tools necessary to construct highly effective mobile engagement solutions.
             </p>
-            <h2>How We Work</h2>
+            <h2 style="margin-bottom: 30px;">How We Work</h2>
             <div>
-                <p>34/7 Client Support</p>
-                <p>But I must explain to you how all this mistaken idea of ncing pleasure and praising pain was.</p>
+                <p style="margin-bottom: 10px; display: flex; align-items: center;"><i class='bx bx-support' style="color: #0C3EB9; font-size: 30px; margin-right: 20px;"></i>24/7 Client Support</p>
+                <p style="color: #626262;">But I must explain to you how all this mistaken idea of ncing pleasure and praising pain was.</p>
             </div>
         </span>
     </section>
 
     <!-- Our Customers Section -->
     <section class="customers">
-        <p>OUR SERVICES</p>
+        <div style="display: flex; align-items: center; gap: 8px; color: #0C3EB9; font-weight: 500;">
+            <div class="style-line">
+                <span class="dot-line"></span>
+                <span class="line"></span>
+            </div>
+            <p>OUR SERVICES</p>
+        </div>
         <h2 style="margin-bottom: 20px;">More than 500+ Customers join with us</h2>
         <div class="customer-services">
             <div class="customer messaging">
-                <div>
-                    <i class='bx bxs-data'></i>
+                <div style="font-size: 60px; color: #0C3EB9;">
+                    <i class='bx bx-chat'></i>
                 </div>
                 <h3>Messaging Services</h3>
-                <p style="font-size: 14px;">We redefine the landscape of communication with our comprehensive Messaging Services both locally and internationally. We provide seamless integration, high delivery rates, and comprehensive analytics to track your campaigns’ performance. We pride in our 24/7 customer support and competitive pricing.</p>
-                <a class="read-more">READ MORE</a>
+                <p style="color: #626262;">We redefine the landscape of communication with our comprehensive Messaging Services</p>
+                <a class="read-more" style="color: #0C3EB9;">READ MORE</a>
             </div>
             <div class="customer sender">
-                <div>
-                    
+                <div style="font-size: 60px; color: white;">
+                    <i class='bx bx-mail-send'></i>
                 </div>
                 <h3>Sender ID Services</h3>
-                <p style="font-size: 14px;">Create a lasting impression with our advanced SMS services.</p>
+                <p style="color: white;">
+                    We empower you to make a lasting impression with our advanced SMS Sender ID Service.Dive into the
+                </p>
                 <a class="read-more">READ MORE</a>
             </div>
             <div class="customer emails">
-                <div>
+                <div style="font-size: 60px; color: #0C3EB9;">
                     <i class='bx bxs-cloud-upload'></i>  
                 </div>
                 <h3>Emails</h3>
-                <p style="font-size: 14px;">Effective communication is key to every successful business.</p>
-                <a class="read-more">READ MORE</a>
+                <p style="color: #626262;">We understand that effective communication is at the heart of every successful business.Explore</p>
+                <a class="read-more" style="color: #0C3EB9;">READ MORE</a>
             </div>
             <div class="customer emails">
-                <div>
+                <div style="font-size: 60px; color: #0C3EB9;">
                     <i class='bx bxs-bar-chart-alt-2'></i>
                 </div>
                 <h3>USSD</h3>
-                <p style="font-size: 14px;">Effective communication is key to every successful business.</p>
-                <a class="read-more">READ MORE</a>
+                <p style="color: #626262;">At kentapay,we bring you the next frontier in interactive communication with our USSD service.Delve into</p>
+                <a class="read-more" style="color: #0C3EB9;">READ MORE</a>
             </div>
             <div class="customer emails">
-                <div>
+                <div style="font-size: 60px; color: #0C3EB9;">
                     <i class='bx bxs-tv'></i>
                 </div>
                 <h3>Pay TV</h3>
-                <p style="font-size: 14px;">Effective communication is key to every successful business.</p>
-                <a class="read-more">READ MORE</a>
+                <p style="color: #626262;">Our smooth intergration with the world's leading Pay TV services enables us to offer a quick and easy</p>
+                <a class="read-more" style="color: #0C3EB9;">READ MORE</a>
             </div>
             <div class="customer emails">
+                <div style="font-size: 60px; color: #0C3EB9;">
+                    <i class='bx bx-signal-4' ></i>
+                </div>
                 <h3>Internet subscriptions</h3>
-                <p style="font-size: 14px;">Effective communication is key to every successful business.</p>
-                <a class="read-more">READ MORE</a>
+                <p style="color: #626262;">We provide a smooth interface with top internet subscription services across the globe,making it simple</p>
+                <a class="read-more" style="color: #0C3EB9;">READ MORE</a>
             </div>
         </div>
     </section>
@@ -141,30 +173,36 @@
     <section class="working-process">
          <div class="left-side">
             <div class="progress-bars">
-                <div style="color: #0C3EB9;">Working process</div>
-                <h2>We are trusted across Africa, with over 13 years of experience</h2>
-                <p>In the contemporary business landscape, ensuring an exceptional customer experience is paramount for setting your enterprise apart and fostering unwavering loyalty among your clientele.</p>
+                <div style="display: flex; align-items: center; gap: 8px; color: #0C3EB9; font-weight: 500; margin-bottom: 15px;">
+                    <div class="style-line">
+                        <span class="dot-line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p>Working Process</p>
+                </div>
+                <h2 style="font-size: 35px;">We are trusted across Africa, <br>with over 13 years of experience</h2>
+                <p style="margin-bottom: 35px;">In the contemporary business landscape, ensuring an exceptional customer experience is paramount for setting your enterprise apart and fostering unwavering loyalty among your clientele.</p>
        
                 <div>
-                    <p><span>(73%)</span> - Development</p>
+                    <p style="margin-bottom: 7px;"><span style="color: #0C3EB9;">(73%)</span> - Development</p>
                     <div class="progress-bar">
                         <div class="progress" style="width: 73%;"></div>
                     </div>
                 </div>
                 <div>
-                    <p>(82%) - Design</p>#00164C
+                    <p style="margin-bottom: 7px;"><span style="color: #0C3EB9;">(82%)</span> - Design</p>
                     <div class="progress-bar">
                         <div class="progress" style="width: 82%;"></div>
                     </div>
                 </div>
                 <div>
-                    <p>(60%) - Payment Solution</p>
+                    <p style="margin-bottom: 7px;"><span style="color: #0C3EB9;">(60%)</span> - Payment Solution</p>
                     <div class="progress-bar">
                         <div class="progress" style="width: 60%;"></div>
                     </div>
                 </div>
                 <div>
-                    <p>(65%) - Support</p>
+                    <p style="margin-bottom: 7px;"><span style="color: #0C3EB9;">(65%)</span> - Support</p>
                     <div class="progress-bar">
                         <div class="progress" style="width: 65%;"></div>
                     </div>
@@ -182,60 +220,111 @@
 
     <!-- Case Studies Section -->
     <section class="case-studies">
-        <p style="color:#0C3EB9;">Our project</p>
-        <h2>Our Latest Case Studies</h2>
+        <div style="display: flex; align-items: center; gap: 8px; color: #0C3EB9; font-weight: 500; margin-bottom: 15px;">
+            <div class="style-line">
+                <span class="dot-line"></span>
+                <span class="line"></span>
+            </div>
+            <p>OUR PROJECT</p>
+        </div>
+        <h2 style="margin-bottom: 20px;">Our Latest Case Studies</h2>
         <div class="cases">
-            <div class="case">Voice</div>
-            <div class="case">Development</div>
-            <div class="case">Electronic Payment</div>
+            <div class="case">
+                <img src="assets/development.jpeg" alt="">
+                <div class="img-details">
+                    <h1>VOICE</h1>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div>
+            <div class="case">
+                <img src="assets/voice.jpeg" alt="">
+                <div class="img-details">
+                    <h1>DEVELOPMENT</h1>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div>
+            <div class="case">
+                <img src="assets/electronic.jpeg" alt="">
+                <div class="img-details">
+                    <h1>ELECTRONIC PAYMENT</h1>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Our Team Section -->
     <section class="team">
         <div class="team-text">
-            <h2>More than 7+ years we <br> provide payment solutions</h2>
+            <div>
+                <div style="display: flex; align-items: center; gap: 8px; color: #0C3EB9; font-weight: 500; margin-bottom: 15px;">
+                    <div class="style-line">
+                        <span class="dot-line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p>OUR TEAM MEMBERS</p>
+                </div>
+                <h2>More than 7+ years we <br> provide payment solutions</h2>
+            </div>
             <span style="display: flex; flex-direction: column;">
-                <p>We are privileged to work with hundreds of future-thinking businesses, includin brands.</p>
+                <p style="color: #626262;">We are privileged to work with hundreds of future-thinking businesses, includin brands.</p>
                 <p style="color: #0C3EB9;">READ MORE</p>
             </span>
         </div>
         <div class="team-members">
-            <div class="team-member"><img src="assets/member3.jpg" alt="member3"></div>
-            <div class="team-member"><img src="assets/member2.jpg" alt="member2"></div>
-            <div class="team-member"><img src="assets/member1.jpg" alt="member1"></div>
+            <div class="team-member">
+                <img src="assets/team.jpg" alt="member3">
+                <div class="img-details">
+                    <h1>James Mutua</h1>
+                    <p>Head of department</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/place your image.jpg" alt="member2">
+                <div class="img-details">
+                    <h1>Happiness Maasai</h1>
+                    <p>Deputy HOD</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/image.jpg" alt="member1">
+                <div class="img-details">
+                    <h1>Hattie Hattie</h1>
+                    <p>Payment manager</p>
+                </div>
+            </div>
         </div>
-        <div class="banners" style="margin-top: 30px; height: 100px; box-shadow: 0px 0px 117px #0C3EB914; width: 670px;">
-            <span>
-                <div>
-                    <img src="../../assets/boss.jpg" alt="">
+        <div class="banners" style="margin-top: 30px; height: 160px; box-shadow: 0px 0px 117px #0C3EB914;">
+            <span class="jpeg-container">
+                <div class="jpeg">
+                    <img src="assets/boss.jpg" alt="">
                 </div>
                 <div>
                     <h1>25k+</h1>
                     <p>Happy clients</p>
                 </div>
             </span>
-            <span>
-                <div>
-                    <img src="../../assets/honest.jpg" alt="">
+            <span class="jpeg-container">
+                <div class="jpeg">
+                    <img src="/assets/942802.jpg" alt="">
                 </div>
                 <div>
                     <h1>769+</h1>
                     <p>Projects completed</p>
                 </div>
             </span>
-            <span>
-                <div>
-                    <img src="../../assets/942802.jpg" alt="">
+            <span class="jpeg-container">
+                <div class="jpeg">
+                    <img src="/assets/honest.jpg" alt="">
                 </div>
                 <div>
                     <h1>85+</h1>
                     <p>Business partners</p>
                 </div>
             </span>
-            <span>
-                <div>
-                    <img src="../../assets/medal.jpg" alt="">
+            <span class="jpeg-container">
+                <div class="jpeg">
+                    <img src="/assets/medal.jpg" alt="">
                 </div>
                 <div>
                     <h1>75+</h1>
@@ -243,125 +332,6 @@
                 </div>
             </span>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </section>
 
     <!-- Working Video Section -->
@@ -376,23 +346,68 @@
 
 <!-- Case Studies Section -->
 <section class="case-studies">
-    <p>CASE STUDIES</p>
-    <h2>Proud Projects Make</h2>
+    <div style="display: flex; align-items: center; gap: 8px; color: #0C3EB9; font-weight: 500; margin-bottom: 15px;">
+        <div class="style-line">
+            <span class="dot-line"></span>
+            <span class="line"></span>
+        </div>
+        <p>CASE STUDIES</p>
+    </div>
+    <h2 style="font-size: 50px; font-weight: 500; margin-bottom: 30px;">Proud Projects Make</h2>
     <div class="cases">
         <div class="case">
-            <h3>Marketing Strategy</h3>
-            <p>Team Meeting</p>
-            <a href="#">View Case Study</a>
+            <div>
+                <img src="assets/office.jpeg" alt="">
+            </div>
+            <div class="img-explanation">
+                <div style="display: flex; gap: 10px; padding: 30px 40px;">
+                    <span style="font-size: 50px; color: #0C3EB9;">
+                        <i class='bx bxs-chess'></i>
+                    </span>
+                    <span>
+                        <p style="color: #0C3EB9;">Team Meeting</p>
+                        <h1>Marketing Strategy</h1>
+                    </span>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; color: #0C3EB9;">
+                    View Case Study
+                </div>
+            </div>
         </div>
         <div class="case">
-            <h3>Request a Meeting</h3>
-            <p>Business Plan</p>
-            <a href="#">View Case Study</a>
+            <div>
+                <img src="assets/office-4.jpeg" alt="">
+            </div>
+            <div class="img-explanation">
+                <div style="display: flex; gap: 10px; padding: 30px 40px;">
+                    <span style="font-size: 50px; color: #0C3EB9;">
+                        <i class='bx bxs-conversation'></i> 
+                    </span>
+                    <span>
+                        <p style="color: #0C3EB9;">Business Plan</p>
+                        <h1>Request a Meeting</h1>
+                    </span>
+                </div> 
+            </div>
         </div>
         <div class="case">
-            <h3>Choose a Service</h3>
-            <p>Payment Solution</p>
-            <a href="#">View Case Study</a>
+            <div>
+                <img src="assets/office-3.jpeg" alt="">
+            </div>
+            <div class="img-explanation">
+                <div style="display: flex; gap: 10px; padding: 30px 40px;">
+                    <span style="font-size: 50px; color: #0C3EB9;">
+                        <i class='bx bx-intersect' ></i>
+                    </span>
+                    <span>
+                        <p style="color: #0C3EB9;">Payment Solution</p>
+                        <h1>Choose a Service</h1>
+                    </span>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; color: #0C3EB9;">
+                    View Case Study
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -401,37 +416,49 @@
 <section class="industry-expert">
     <div style="display: grid; grid-template-columns: 1fr 1fr;">
         <span>
-            <h1>WHAT WE SERVE</h1>
+            <div style="display: flex; align-items: center; gap: 8px; color: #0C3EB9; font-weight: 500; margin-bottom: 15px;">
+                <div class="style-line">
+                    <span class="dot-line"></span>
+                    <span class="line"></span>
+                </div>
+                <p>WHAT WE SERVE</p>
+            </div>
              <h2>Best Practices from <br> Industry Expert</h2>
         </span>
         <span>
-            <p>We are privileged to work with hundreds of future-thinking, industry-leading brands. Our deep industry expertise enables global brands to hit the ground running.</p>
+            <p style="color: #626262;">We are privileged to work with hundreds of future-thinking, industry-leading brands. Our deep industry expertise enables global brands to hit the ground running.</p>
         </span>
     </div>
     
     <div class="expert-services">
         <div class="expert-service">
+            <i class='bx bxs-data' style="color: #0C3EB9; font-size: 60px;"></i>
             <h3>Payment Gateway</h3>
         </div>
         <div class="expert-service">
+            <i class='bx bx-bar-chart-alt-2' style="color: #0C3EB9; font-size: 60px;"></i>
             <h3>Payment Gateway</h3>
         </div>
         <div class="expert-service">
+            <i class='bx bx-cloud-upload' style="color: #0C3EB9; font-size: 60px;"></i>
             <h3>Payment Gateway</h3>
         </div>
         <div class="expert-service">
+            <i class='bx bxs-user-pin' style="color: #0C3EB9; font-size: 60px;"></i>
             <h3>Payment Gateway</h3>
         </div>
     </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr;">
-        <span></span>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
         <span>
-            <h1>02 Payment gateway</h1>
-            <h2>Payment Experiance</h2>
-            <p style="color: #626262;">
+            <img src="assets/payment.jpeg" alt="">
+        </span>
+        <span>
+            <h1 style="margin-bottom: 10px;">02 Payment gateway</h1>
+            <h2 style="color: #0C3EB9; margin-bottom: 25px;">Payment Experiance</h2>
+            <p style="color: #626262; margin-bottom: 30px;">
                 It is a long established fact that a reader will be distracted by the rea dable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more or less normal page distribution of letters, as opposed to using Content here,content here normal distribution looking at its.
             </p>
-            <a href="">
+            <a href="" style="text-decoration: none; color: #0C3EB9;">
                 GET DETAILS
             </a>
         </span>
@@ -439,70 +466,75 @@
 </section>
 
 <!-- Blog Update Section -->
-<section class="blog-update">
-    <p>OUR ARTICLE</p>
-    <h2>Latest Blog Update</h2>
-    <div class="blogs">
-        <div class="blog">
-            <h3>Payment Fraud</h3>
-            <p>Protecting your company from fraud payment</p>
-            <a href="#">Read More</a>
+ <div class="map-bg"> 
+    <section class="blog-update">
+        <div style="display: flex; align-items: center; gap: 8px; color: #0C3EB9; font-weight: 500; margin-bottom: 15px;">
+            <div class="style-line">
+                <span class="dot-line"></span>
+                <span class="line"></span>
+            </div>
+            <p>OUR ARTICLE</p>
         </div>
-        <div class="blog">
-            <h3>Payment Fraud</h3>
-            <p>Protecting your company from fraud payment</p>
-            <a href="#">Read More</a>
+        <h2 style="margin-bottom: 20px;">Latest Blog Update</h2>
+        <div class="blogs">
+            <div class="blog">
+               <img src="assets/fraud.jpeg" alt="">
+            </div>
+            <div class="blog">
+                <img src="assets/fraud-2.jpeg" alt="">
+            </div>
+            <div class="blog">
+                <img src="assets/fraud-3.jpeg" alt="">
+            </div>
         </div>
-        <div class="blog">
-            <h3>Carousel of Colours</h3>
-            <p>Exploring the impact of colors in branding</p>
-            <a href="#">Read More</a>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div style="display: flex; align-items: center; gap: 8px; color: #0C3EB9; font-weight: 500; margin-bottom: 15px;">
+            <div class="style-line">
+                <span class="dot-line"></span>
+                <span class="line"></span>
+            </div>
+            <p>TESTIMONIAL</p>
         </div>
-    </div>
-</section>
+        <h2 style="margin-bottom: 30px;">What Our Clients Say ?</h2>
+        <div class="testimonies">
+            <div class="testimonial">
+                <p>We develop reliable and scalable software solutions for any OS, browser, and device. We bring together deep industry expertise and the latest advancements.</p>
+                <div style="display: flex; gap: 6px; align-items: center;">
+                    <span class="profile-circle"></span>
+                    <span>
+                        <p>Rameli Andrea</p>
+                        <p>CEO & Founder</p>
+                    </span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>Our solutions are focused on delivering the best possible outcomes for our clients. We pride ourselves on our professionalism and attention to detail.</p>
+                <div style="display: flex; gap: 6px; align-items: center;">
+                    <span class="profile-circle"></span>
+                    <span>
+                        <p>Abbie Ferguson</p>
+                        <p>CEO & Founder</p>
+                    </span>
+                </div>
+            </div> 
+        </div>
+    </section>
+ </div>
 
-<!-- Testimonials Section -->
-<section class="testimonials">
-    <div style="display: flex; flex-direction: row;">
-        <div><span class="dot"></span></div>
-        <p style="color: #0C3EB9;">TESTIMONIAL</p>
-    </div>
-    <h2>What Our Clients Say ?</h2>
-    <div class="testimonies">
-        <div class="testimonial">
-            <p>We develop reliable and scalable software solutions for any OS, browser, and device. We bring together deep industry expertise and the latest advancements.</p>
-            <div style="display: flex; gap: 6px; align-items: center;">
-                <span class="profile-circle"></span>
-                <span>
-                    <p>Rameli Andrea</p>
-                    <p>CEO & Founder</p>
-                </span>
-            </div>
-        </div>
-        <div class="testimonial">
-            <p>Our solutions are focused on delivering the best possible outcomes for our clients. We pride ourselves on our professionalism and attention to detail.</p>
-            <div style="display: flex; gap: 6px; align-items: center;">
-                <span class="profile-circle"></span>
-                <span>
-                    <p>Abbie Ferguson</p>
-                    <p>CEO & Founder</p>
-                </span>
-            </div>
-        </div> 
-    </div>
-</section>
 
 <!-- Footer Section -->
- <footer class="footer-1">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
- </footer>
+<footer class="footer-1">
+    <!-- <app-slider></app-slider> -->
+</footer>
+  
 <footer class="footer-2">
     <div class="foot-cont">
-        <div class="footer-logo">KentaPay</div>
+        <div class="footer-logo">
+            <img src="assets/kentapay.png" alt="">
+        </div>
         <div class="footer-content">
             <div class="footer-links">
                 <h3>Payments</h3>
